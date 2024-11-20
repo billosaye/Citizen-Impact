@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Citizens Impact</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Free HTML Templates" name="keywords" />
+    <meta content="Free HTML Templates" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/logo.webp" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar & Carousel Start -->
+    <div class="container-fluid position-relative p-0">
+      <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+          <h1 class="m-0">
+            <img src="./img/logo.webp" alt="">
+          </h1>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="#about" class="nav-item nav-link">About</a>
+            <a href="#programs" class="nav-item nav-link">Programs</a>
+            <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+            <a href="#impact" class="nav-item nav-link">Testimonials</a>
+            <a href="#donate" class="nav-item nav-link">Donate</a>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        id="header-carousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="w-100" src="img/banner1.jpg" alt="Image" />
+            <div
+              class="carousel-caption d-flex flex-column align-items-center justify-content-center"
+            >
+              <div class="p-3" style="max-width: 900px">
+                <h2 class="display-1 text-white mb-md-4 animated zoomIn">
+                  Helping Hands, Inspiring Hope
+                </h2>
+                <a
+                  href="#donate"
+                  class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
+                  >Donate</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="w-100" src="img/banner2.jpg" alt="Image" />
+            <div
+              class="carousel-caption d-flex flex-column align-items-center justify-content-center"
+            >
+              <div class="p-3" style="max-width: 900px">
+                <h1 class="display-1 text-white mb-md-4 animated zoomIn">
+                  People First, Community Always
+                </h1>
+                <a
+                  href="#donate"
+                  class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
+                  >Donate</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#header-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#header-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- Navbar & Carousel End -->
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content" style="background: rgba(9, 30, 62, 0.7)">
+          <div class="modal-header border-0">
+            <button
+              type="button"
+              class="btn bg-white btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            class="modal-body d-flex align-items-center justify-content-center"
+          >
+            <div class="input-group" style="max-width: 600px">
+              <input
+                type="text"
+                class="form-control bg-transparent border-primary p-3"
+                placeholder="Type search keyword"
+              />
+              <button class="btn btn-primary px-4">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+    <!-- Facts Start -->
+    <div class="container-fluid facts py-5 pt-lg-0">
+      <div class="container py-5 pt-lg-0">
+        <div class="row gx-0">
+          <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
+            <div
+              class="bg-primary shadow d-flex align-items-center justify-content-center p-4"
+              style="height: 150px"
+            >
+              <div
+                class="bg-white d-flex align-items-center justify-content-center rounded mb-2"
+                style="width: 60px; height: 60px"
+              >
+                <i class="fa fa-users text-primary"></i>
+              </div>
+              <div class="ps-4">
+                <h5 class="text-white mb-0">People Reached</h5>
+                <h1 class="text-white mb-0" data-toggle="counter-up">1200</h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
+            <div
+              class="bg-light shadow d-flex align-items-center justify-content-center p-4"
+              style="height: 150px"
+            >
+              <div
+                class="bg-primary d-flex align-items-center justify-content-center rounded mb-2"
+                style="width: 60px; height: 60px"
+              >
+                <i class="fa fa-check text-white"></i>
+              </div>
+              <div class="ps-4">
+                <h5 class="text-primary mb-0">Projects Done</h5>
+                <h1 class="mb-0" data-toggle="counter-up">75</h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
+            <div
+              class="bg-primary shadow d-flex align-items-center justify-content-center p-4"
+              style="height: 150px"
+            >
+              <div
+                class="bg-white d-flex align-items-center justify-content-center rounded mb-2"
+                style="width: 60px; height: 60px"
+              >
+                <i class="fa fa-award text-primary"></i>
+              </div>
+              <div class="ps-4">
+                <h5 class="text-white mb-0">Win Awards</h5>
+                <h1 class="text-white mb-0" data-toggle="counter-up">5</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Facts Start -->
+
+    <!-- About Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="about">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-7">
+            <div class="section-title position-relative pb-3 mb-5">
+              <h5 class="fw-bold text-primary text-uppercase">About Us</h5>
+              <h1 class="mb-0">
+                Building Stronger Communities, One Life at a Time
+              </h1>
+            </div>
+            <p class="mb-4">
+              We empower individuals and families facing socioeconomic
+              challenges by addressing critical needs in education, health, and
+              community development. Through impactful programs and events, we
+              strive to foster inclusivity and equity, building a stronger, more
+              compassionate world for all.
+            </p>
+            <div class="row g-0 mb-3">
+              <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                <h5 class="mb-3">
+                  <i class="fa fa-check text-primary me-3"></i>Impact Driven
+                </h5>
+                <h5 class="mb-3">
+                  <i class="fa fa-check text-primary me-3"></i>Dedicated
+                  Volunteers
+                </h5>
+              </div>
+              <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                <h5 class="mb-3">
+                  <i class="fa fa-check text-primary me-3"></i>Compassionate
+                  Support
+                </h5>
+                <h5 class="mb-3">
+                  <i class="fa fa-check text-primary me-3"></i>Transparent
+                  Funding
+                </h5>
+              </div>
+            </div>
+            <div
+              class="d-flex align-items-center mb-4 wow fadeIn"
+              data-wow-delay="0.6s"
+            ></div>
+          </div>
+          <div class="col-lg-5" style="min-height: 500px">
+            <div class="position-relative h-100">
+              <img
+                class="position-absolute w-100 h-100 rounded wow zoomIn"
+                data-wow-delay="0.9s"
+                src="img/img1.jpg"
+                style="object-fit: cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Features Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="programs">
+      <div class="container py-5">
+        <div
+          class="section-title text-center position-relative pb-3 mb-5 mx-auto"
+          style="max-width: 600px"
+        >
+          <h5 class="fw-bold text-primary text-uppercase">Our Programs</h5>
+          <h1 class="mb-0">Empowering Communities, Transforming Lives</h1>
+        </div>
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <div class="row g-5">
+              <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
+                <div
+                  class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                  style="width: 60px; height: 60px"
+                >
+                  <i class="fa fa-people-carry text-white"></i>
+                </div>
+                <h4>Community Development</h4>
+                <p class="mb-0">
+                  We foster sustainable growth by supporting infrastructure,
+                  local leadership, and social initiatives to uplift entire
+                  communities.
+                </p>
+              </div>
+              <div class="col-12 wow zoomIn" data-wow-delay="0.6s">
+                <div
+                  class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                  style="width: 60px; height: 60px"
+                >
+                  <i class="fa fa-book text-white"></i>
+                </div>
+                <h4>Education</h4>
+                <p class="mb-0">
+                  Our programs provide access to quality education,
+                  scholarships, and learning resources to empower future
+                  generations.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 wow zoomIn"
+            data-wow-delay="0.9s"
+            style="min-height: 350px"
+          >
+            <div class="position-relative h-100">
+              <img
+                class="position-absolute w-100 h-100 rounded wow zoomIn"
+                data-wow-delay="0.1s"
+                src="img/1ds.png"
+                style="object-fit: cover"
+                alt="Charity Programs"
+              />
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="row g-5">
+              <div class="col-12 wow zoomIn" data-wow-delay="0.4s">
+                <div
+                  class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                  style="width: 60px; height: 60px"
+                >
+                  <i class="fa fa-box text-white"></i>
+                </div>
+                <h4>Resource Distribution</h4>
+                <p class="mb-0">
+                  From food and clothing to essential medical supplies, we
+                  deliver resources where they are needed most.
+                </p>
+              </div>
+              <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
+                <div
+                  class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                  style="width: 60px; height: 60px"
+                >
+                  <i class="fa fa-chalkboard-teacher text-white"></i>
+                </div>
+                <h4>Training</h4>
+                <p class="mb-0">
+                  We provide skill-based training and workshops to help
+                  individuals achieve financial independence and personal
+                  growth.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Features End -->
+
+    <!-- Portfolio Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="portfolio">
+      <div class="container py-5">
+        <div
+          class="section-title text-center position-relative pb-3 mb-5 mx-auto"
+          style="max-width: 600px"
+        >
+          <h5 class="fw-bold text-primary text-uppercase">Our Portfolio</h5>
+          <h1 class="mb-0">Events We’ve Proudly Supported</h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.2s">
+            <div class="position-relative h-100">
+              <img
+                class="img-fluid rounded w-100 h-100"
+                src="img/p7.png"
+                alt="Event 1"
+                style="object-fit: cover"
+              />
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.4s">
+            <div class="position-relative h-100">
+              <img
+                class="img-fluid rounded w-100 h-100"
+                src="img/p6.png"
+                alt="Event 2"
+                style="object-fit: cover"
+              />
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+            <div class="position-relative h-100">
+              <img
+                class="img-fluid rounded w-100 h-100"
+                src="img/p5.png"
+                alt="Event 3"
+                style="object-fit: cover"
+              />
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.8s">
+            <div class="position-relative h-100">
+              <img
+                class="img-fluid rounded w-100 h-100"
+                src="img/p4.png"
+                alt="Event 4"
+                style="object-fit: cover"
+              />
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="1.0s">
+            <div class="position-relative h-100">
+              <img
+                class="img-fluid rounded w-100 h-100"
+                src="img/p3.png"
+                alt="Event 5"
+                style="object-fit: cover"
+              />
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="1.2s">
+            <div class="position-relative h-100">
+              <img
+                class="img-fluid rounded w-100 h-100"
+                src="img/p2.png"
+                alt="Event 6"
+                style="object-fit: cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio End -->
+
+    <!-- Impact Stories Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" id="impact">
+      <div class="container py-5">
+        <div
+          class="section-title text-center position-relative pb-3 mb-4 mx-auto"
+          style="max-width: 600px"
+        >
+          <h5 class="fw-bold text-primary text-uppercase">Impact Stories</h5>
+          <h1 class="mb-0">Real Stories of Change and Empowerment</h1>
+        </div>
+        <div
+          class="owl-carousel testimonial-carousel wow fadeInUp"
+          data-wow-delay="0.6s"
+        >
+          <div class="testimonial-item bg-light my-4">
+            <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+              <img
+                class="img-fluid rounded"
+                src="img/testimonial-1.jpg"
+                style="width: 60px; height: 60px"
+              />
+              <div class="ps-4">
+                <h4 class="text-primary mb-1">John Mark</h4>
+                <small class="text-uppercase"
+                  >Beneficiary - Education Program</small
+                >
+              </div>
+            </div>
+            <div class="pt-4 pb-5 px-5">
+              "Thanks to the support of this organization, I was able to
+              complete my high school education, which opened doors to further
+              learning and better job opportunities."
+            </div>
+          </div>
+          <div class="testimonial-item bg-light my-4">
+            <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+              <img
+                class="img-fluid rounded"
+                src="img/testimonial-2.jpg"
+                style="width: 60px; height: 60px"
+              />
+              <div class="ps-4">
+                <h4 class="text-primary mb-1">Jane Smith</h4>
+                <small class="text-uppercase"
+                  >Volunteer - Community Outreach</small
+                >
+              </div>
+            </div>
+            <div class="pt-4 pb-5 px-5">
+              "Volunteering with this organization has been an incredibly
+              rewarding experience. I've seen firsthand how community
+              development initiatives have transformed lives."
+            </div>
+          </div>
+          <div class="testimonial-item bg-light my-4">
+            <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+              <img
+                class="img-fluid rounded"
+                src="img/testimonial-3.jpg"
+                style="width: 60px; height: 60px"
+              />
+              <div class="ps-4">
+                <h4 class="text-primary mb-1">Samuel Mwangi</h4>
+                <small class="text-uppercase"
+                  >Beneficiary - Health Program</small
+                >
+              </div>
+            </div>
+            <div class="pt-4 pb-5 px-5">
+              "The health program not only helped me access essential medical
+              care, but it also provided vital health education that has
+              positively impacted my family's well-being."
+            </div>
+          </div>
+          <div class="testimonial-item bg-light my-4">
+            <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+              <img
+                class="img-fluid rounded"
+                src="img/testimonial-4.jpg"
+                style="width: 60px; height: 60px"
+              />
+              <div class="ps-4">
+                <h4 class="text-primary mb-1">Patricia Wanjiru</h4>
+                <small class="text-uppercase"
+                  >Beneficiary - Resource Distribution</small
+                >
+              </div>
+            </div>
+            <div class="pt-4 pb-5 px-5">
+              "I was able to receive the resources I needed during a difficult
+              time. This support not only alleviated my immediate needs but also
+              gave me the hope to move forward."
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Impact Stories End -->
+
+    <!-- Donate Now Start -->
+    <div
+      class="container-fluid py-5 wow fadeInUp"
+      data-wow-delay="0.1s"
+      id="donate"
+    >
+      <div class="container py-5">
+        <div
+          class="section-title text-center position-relative pb-3 mb-4 mx-auto"
+          style="max-width: 600px"
+        >
+          <h5 class="fw-bold text-primary text-uppercase">
+            Ways You Can Donate
+          </h5>
+          <h1 class="mb-0">Make a Difference with Your Generosity</h1>
+        </div>
+        <div class="row g-5">
+          <!-- Online Donation -->
+          <div class="col-md-4">
+            <div class="card shadow-sm border-0 p-4">
+              <h4>By Email</h4>
+              <p class="mb-4">
+                You can donate via email by contacting us at the email address
+                below:
+              </p>
+              <p>
+                <strong>Email:</strong>
+                <a href="mailto:official@citizens-impart.org"
+                  >official@citizens-impart.org</a
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Food Donation -->
+          <div class="col-md-4">
+            <div class="card shadow-sm border-0 p-4">
+              <h4>Food Donation</h4>
+              <p class="mb-4">
+                Support our community by donating food items that will help
+                families in need. Your generosity can make a huge difference.
+              </p>
+            </div>
+          </div>
+          <!-- In Person Donation -->
+          <div class="col-md-4">
+            <div class="card shadow-sm border-0 p-4">
+              <h4>In Person</h4>
+              <p class="mb-4">
+                Visit our Citizen Impart Head Office to make a donation in
+                person. Our team is here to assist you in making a difference.
+              </p>
+              <p>
+                <strong>Citizen Impart Head Office</strong><br />7322 South West
+                Freeway Suite 1840, Houston, TX 77471
+              </p>
+              <p><strong>Tel:</strong> +1.4342494959</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Donate Now End -->
+
+    <!-- Footer Start -->
+    <footer class="container-fluid bg-dark text-white py-4 mt-5">
+      <div class="container text-center">
+        <p class="mb-0">
+          &copy; <span id="year"></span> Citizen Impart. All Rights Reserved.
+        </p>   
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script>
+      // This will automatically update the year to the current year
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
